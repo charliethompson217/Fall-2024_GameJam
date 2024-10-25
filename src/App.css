@@ -1,0 +1,17 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-bg-color);
+  color: var(--primary-txt-color);
+}
