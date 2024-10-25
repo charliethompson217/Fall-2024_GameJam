@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-fall2024gamejam-dev-53612-authRole",
+      "UnauthRoleArn": "arn:aws:iam::245802128258:role/amplify-fall2024gamejam-dev-53612-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::245802128258:role/amplify-fall2024gamejam-dev-53612-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-fall2024gamejam-dev-53612-deployment",
+      "UnauthRoleName": "amplify-fall2024gamejam-dev-53612-unauthRole",
+      "StackName": "amplify-fall2024gamejam-dev-53612",
+      "StackId": "arn:aws:cloudformation:us-east-2:245802128258:stack/amplify-fall2024gamejam-dev-53612/0153e800-9280-11ef-9753-021ea4a5518b",
+      "AmplifyAppId": "d2oi4adahksx9q"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d2oi4adahksx9q",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}

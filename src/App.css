@@ -3,6 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: #4f4f4f;
 }
 
 canvas {
@@ -12,6 +13,5 @@ canvas {
 .App {
   width: 100vw;
   height: 100vh;
-  background-color: var(--main-bg-color);
-  color: var(--primary-txt-color);
+  background-color: #626262;
 }
