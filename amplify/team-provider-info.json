@@ -17,6 +17,15 @@
           "appId": "d2oi4adahksx9q",
           "type": "manual"
         }
+      },
+      "function": {
+        "gameCOnectionsLambda": {
+          "deploymentBucketName": "amplify-fall2024gamejam-dev-53612-deployment",
+          "s3Key": "amplify-builds/gameCOnectionsLambda-44624d356474636d4d30-build.zip"
+        }
+      },
+      "storage": {
+        "WebSocketConnections": {}
       }
     }
   }

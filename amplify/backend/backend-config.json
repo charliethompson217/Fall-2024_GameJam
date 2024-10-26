@@ -1,4 +1,23 @@
 {
+  "api": {},
+  "function": {
+    "gameCOnectionsLambda": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn",
+            "StreamArn"
+          ],
+          "category": "storage",
+          "resourceName": "WebSocketConnections"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
   "hosting": {
     "amplifyhosting": {
       "providerPlugin": "awscloudformation",
@@ -7,6 +26,22 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_gameCOnectionsLambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "gameCOnectionsLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_gameCOnectionsLambda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "gameCOnectionsLambda"
+        }
+      ]
+    },
     "AMPLIFY_hosting_amplifyhosting_appId": {
       "usedBy": [
         {
@@ -22,6 +57,12 @@
           "resourceName": "amplifyhosting"
         }
       ]
+    }
+  },
+  "storage": {
+    "WebSocketConnections": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
     }
   }
 }

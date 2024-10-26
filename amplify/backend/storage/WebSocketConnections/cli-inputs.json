@@ -1,0 +1,14 @@
+{
+  "resourceName": "WebSocketConnections",
+  "tableName": "WebSocketConnections",
+  "partitionKey": {
+    "fieldName": "connectionId",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "timeStamp",
+    "fieldType": "number"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

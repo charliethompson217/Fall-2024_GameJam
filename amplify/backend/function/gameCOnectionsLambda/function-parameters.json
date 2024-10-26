@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "storage": {
+      "WebSocketConnections": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

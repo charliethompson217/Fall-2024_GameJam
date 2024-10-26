@@ -1,22 +1,26 @@
 import React, { useRef, useEffect } from 'react';
 
 
-export default function Sketch() {
+export default function Sketch({ serverTime }) {
   const sketchRef = useRef();
   const p5Instance = useRef(null);
+
+  let offset=0;
 
   useEffect(() => {
     // Calculate time elapsed since the start of the current 108-second window
     const getElapsedTime = () => {
-      const now = Math.floor(Date.now() / 1000); // Current Unix time in seconds
+      const now = serverTime/1000000000;
+      offset = Math.floor(Date.now() / 1000) - now;
+      console.log(now);
       const startOfWindow = Math.floor(now / 108) * 108; // Start of the 108-second window
       return (now - startOfWindow) * 1000; // Difference in milliseconds
     };
 
     // Function for creating the sketch
     const sketch = (p) => {
-      let vw = Math.min(document.documentElement.clientWidth, window.innerWidth);
-      let vh = Math.min(document.documentElement.clientHeight, window.innerHeight);
+      let vw = 734;
+      let vh = 307;
       const boxWidth = vw / 8;
       const boxHeight = vh / 5;
 
@@ -72,7 +76,7 @@ export default function Sketch() {
         const unixTime = Math.floor(Date.now());
 
         // Calculate countdown timer (108 - seconds elapsed within the current 108-second window)
-        const now = Math.floor(Date.now() / 1000);
+        const now = Math.floor(Date.now() / 1000) ;
         const countdown = 108 - (now % 108);
 
         // Move the box
